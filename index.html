@@ -1,8 +1,9 @@
 <!doctype html>
 <html>
 <head>
-  <title>WEB1 - Welcome</title>
+  <title>창의공학설계 G조</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166262054-1"></script>
 <script>
@@ -14,37 +15,70 @@
 </script>
 </head>
 <body>
-  <h1><a href="index.html">WEB</a></h1>
-  <ol>
-    <li><a href="1.html">HTML</a></li>
-    <li><a href="2.html">CSS</a></li>
-    <li><a href="3.html">JavaScript</a></li>
-  </ol>
-  <h2>WEB</h2>
-  <p>
-    The World Wide Web (abbreviated WWW or the Web) is an information space where documents and other web resources are identified by Uniform Resource Locators (URLs), interlinked by hypertext links, and can be accessed via the Internet.[1] English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser computer program in 1990 while employed at CERN in Switzerland.[2][3] The web browser was released outside of CERN in 1991, first to other research institutions starting in January 1991 and to the general public on the Internet in August 1991.
-  </p>
-  <p>
-    <div id="disqus_thread"></div>
-    <script>
+  <h1><a href="index.html">창의공학설계 G조</a></h1>
+   <div id="grid">
+    <ol>
+      <li><a href="1.html">날씨 정보(XML)를 LED로 표현하기</a></li>
+      <li><a href="2.html">미세먼지 정보(HTML)를 LED로 표현하기</a></li>
+      <li><a href="3.html">제작 과정 브이로그</a></li>
+    </ol>
+    <div id="article">
+      <h2>창의공학설계 G조 프로젝트 설명</h2>
+      <p>
+        <pre>
+          <strong># 제작에 쓰인 부품</strong>
+          • 제품의 프로토타입을 만들 때 주로 쓰이는 브레드보드와 점퍼 케이블, LED 4개(빨강,
+              노랑, 초록), RGB LED, 220옴 저항의 부품을 사용하여 제작했습니다.
 
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://web-zy4boqlrcd.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </p>
+          <strong># beautifulsoup</strong>
+          • <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/"
+          target="_blank" title="BeautifulSoup Documentation">BeautifulSoup Documentation</a>를 참고, BeautifulSoup의 라이브러리를 크롤링하여
+             날씨 정보와 미세먼지 정보를 LED로 나타내는 파이썬 코드문을 작성했습니다.
+          • beautifulsoup 라이브러리는 HTML 을 XML 형식의 파이썬 객체로 변환하여
+              웹 페이지의 정보를 탐색하는데 도움을 주는 라이브러리 입니다.
+
+          <h3>날씨 정보(XML)를 LED로 표현하기</h3>
+
+          <strong># 사전 준비</strong>
+
+
+          날씨 정보를 LED로 표현하기 위해 다음과 같이 코드문을 작성했습니다.
+          <img src="[Python] 날씨 정보(XML)를 LED로 표현하기.JPG" width="20%">
+
+          <h3>미세먼지 정보(HTML)를 LED로 표현하기</h3>
+
+          <strong># 사전 준비</strong>
+          • 파이썬에서 beautifulsoup 라이브러리를 사용한다.
+          • 네이버에서 제공하는 미세먼지 농도 데이터를 가져오기 위해서
+            HTML 정보를 크롤링 해온다.
+
+          미세먼지 정보를 LED로 표현하기 위해 다음과 같이 코드문을 작성했다.
+          <img src="[Python] 미세먼지 정보(HTML)를 LED로 표현하기.JPG" width="20%">
+        </pre>
+       </p>
+    </div>
+   </div>
+   <p>
+     <div id="disqus_thread"></div>
+     <script>
+
+     /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+     /*
+     var disqus_config = function () {
+     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+     */
+     (function() { // DON'T EDIT BELOW THIS LINE
+     var d = document, s = d.createElement('script');
+     s.src = 'https://web-zy4boqlrcd.disqus.com/embed.js';
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+     })();
+     </script>
+     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+   </p>
 </body>
 </html>
